@@ -1,0 +1,82 @@
+.footer-section {
+  background-image: url("./image-footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Red Hat Display", sans-serif;
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 19.25rem;
+    background-color: #4d97a9e3;
+    align-items: center;
+
+    h1 {
+      color: white;
+      margin-left: 1rem;
+      max-width: 15ch;
+      justify-self: center;
+    }
+
+    p {
+      color: white;
+      max-width: 30ch;
+      justify-self: center;
+    }
+
+    .button-div {
+      justify-self: center;
+
+      .dl-button {
+        border: none;
+        padding: 1rem 1.5rem;
+        border-radius: 50px;
+        background-color: #855fb1;
+        color: white;
+        font-weight: 700;
+        margin-right: 0.25rem;
+        transition: all 200ms ease-in;
+
+        span {
+          color: #d9b8ff;
+          margin-left: 0.1rem;
+        }
+      }
+
+      .dl-button:hover {
+        background-color: #b18bdd;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 48rem) {
+  .footer-section {
+    background-image: url("./image-footer-tablet.jpg");
+
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      h1 {
+        font-size: 2rem;
+        margin-top: 1rem;
+      }
+
+      p {
+        margin: 1rem 0rem 2rem;
+        max-width: 45ch;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 23.438rem) {
+  .footer-section {
+    background-image: url("./image-footer-mobile.jpg");
+  }
+}

@@ -1,0 +1,74 @@
+.built-container {
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  .built-div {
+    margin: 5rem 0rem 6rem;
+
+    h3 {
+      color: #4d96a9;
+      font-size: 1rem;
+      letter-spacing: 0.2rem;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      max-width: 15ch;
+      margin: auto;
+    }
+
+    p {
+      color: #87879d;
+      max-width: 45ch;
+      margin: 2.5rem auto;
+    }
+  }
+
+  .transition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(2rem);
+
+    .vert-line {
+      height: 1px;
+      width: 5.25rem;
+      transform: rotate(90deg);
+      background-color: #87879d42;
+    }
+
+    .circle-div {
+      border-radius: 50%;
+      width: 3.5rem;
+      height: 3.5rem;
+      border: solid #87879d42 1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      color: #87879d;
+      margin-top: 2.55rem;
+      background-color: white;
+    }
+  }
+}
+
+@media only screen and (max-width: 48rem) {
+  .built-container {
+    .built-div {
+      p {
+        max-width: 50ch;
+        margin: 2.5rem 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 23.438rem) {
+}

@@ -1,0 +1,140 @@
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  min-height: 60vh;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.image-left {
+  overflow: hidden;
+  background-image: url("./image-hero-left.png");
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position-y: top 30%;
+  background-position: left -2rem center;
+}
+
+.middle-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 3.5rem;
+    color: #28283d;
+    line-height: 4.5rem;
+    font-weight: 900;
+  }
+
+  p {
+    font-size: 1.125rem;
+    color: #87879d;
+    margin: 1.5rem 0rem;
+  }
+
+  .button-div {
+    padding-top: 1rem;
+
+    .dl-button {
+      border: none;
+      padding: 1rem 1.5rem;
+      border-radius: 50px;
+      background-color: #4d96a9;
+      color: white;
+      font-weight: 700;
+      margin-right: 0.25rem;
+      transition: all 200ms ease-in;
+
+      span {
+        color: #8fe3f9;
+        margin-left: 0.1rem;
+      }
+    }
+
+    .dl-button:hover {
+      background-color: #71c0d4;
+      cursor: pointer;
+    }
+
+    .what-button {
+      border: none;
+      padding: 1rem 1.2rem;
+      border-radius: 50px;
+      background-color: #855fb1;
+      color: white;
+      font-weight: 700;
+      margin-left: 0.25rem;
+      transition: all 200ms ease-in;
+    }
+
+    .what-button:hover {
+      background-color: #b18bdd;
+      cursor: pointer;
+    }
+  }
+}
+
+.image-right {
+  overflow: hidden;
+  background-image: url("./image-hero-right.png");
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position-y: center;
+  background-position-x: 5rem;
+}
+
+// Tablet
+@media only screen and (max-width: 48rem) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-left {
+    background-image: url("./image-hero.png");
+    background-size: 110%;
+    background-repeat: no-repeat;
+    height: 19rem;
+    background-position-y: center;
+    background-position: center;
+    margin: 3rem 0rem;
+  }
+
+  .middle-section {
+    h1 {
+      max-width: 10ch;
+      padding: 0rem 1.5rem;
+    }
+
+    p {
+      max-width: 40ch;
+      padding: 0rem 1.5rem;
+    }
+  }
+
+  .image-right {
+    display: none;
+  }
+}
+
+//Mobile
+@media only screen and (max-width: 23.438rem) {
+  .image-left {
+    margin: 0.5rem 0rem;
+  }
+
+  .middle-section {
+    .button-div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .what-button {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
