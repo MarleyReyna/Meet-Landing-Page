@@ -4,9 +4,9 @@ import './Topbar.scss';
 
 const Topbar = () => {
     return (
-        <div className='top-div'>
+        <header className='top-div'>
             <img src={logo} alt='logo'></img>
-        </div>
+        </header>
     );
 }
  

@@ -37,7 +37,7 @@
   .photo-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 3rem 3rem 0rem;
+    margin: 3rem 10.3rem 0rem;
 
     img {
       width: 100%;
@@ -67,11 +67,12 @@
 }
 
 //Mobile
-@media only screen and (max-width: 23.438rem) {
+@media only screen and (max-width: 37rem) {
   .body-container {
     .photo-container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      padding: 0.3rem;
     }
   }
 }
